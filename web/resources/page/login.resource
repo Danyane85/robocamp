@@ -6,14 +6,14 @@ Library    Browser
 
 ***Keywords***
 Go To Login Page
-    New Browser    headless=False            browser=chromium
+    New Browser    headless=False            browser=firefox
     New Page       http://localhost:3000/
     
 Fill Credentials
-    [Arguments]         ${email}    ${pass}
+    [Arguments]         ${email}    ${password}
 
     Fill Text    css=input[placeholder="Seu e-mail"]    ${email}
-    Fill Text    css=input[name=password]               ${pass}
+    Fill Text    css=input[name=password]               ${password}
 
 Submit Credentials    
 

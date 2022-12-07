@@ -24,7 +24,7 @@ Select Student
     Fill Text    xpath=//div[contains(text(), "nome do aluno")]/..//input
     ...          ${student_name} 
 
-    Click    css=div[class$=option] >> text=Falcão
+    Click    css=div[class$=option] >> text=${student_name}
 
 Select Plan
     [Arguments]    ${plan_name}
@@ -42,6 +42,9 @@ Fill Start Date
     Keyboard Key    press        ${number}    
 
     END
+
+Submit Enroll Form
+    Click    css=button >> text=Salvar    
 
 
 

@@ -5,7 +5,7 @@ Library         Browser
 
 ***Test Cases***
 Portal Admin deve estar online
-    New Browser     headless=False      browser=chromium
+    New Browser     headless=False      browser=mozilla
     New Page        http://localhost:3000/
     Get Text        h1    contains    Painel do Administrador
     Sleep           5
